@@ -54,6 +54,11 @@ section a img {
 	height: 5px;
 }
 
+#footer {
+	font-size: 8pt;
+	line-height: 200%;
+}
+
 .tableOverride {
 	border-width: 0px;
 	border-style: none;
@@ -121,6 +126,7 @@ table {
 body {
 	background-image: url("images/tree_bark.png");
 	background-repeat: repeat;
+	background-attachment: fixed;
 }
 
 h1 {
