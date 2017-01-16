@@ -1,0 +1,128 @@
+/*  Resource Credit
+
+	Tutorial for image box provided by: 
+	http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/
+	
+	Background from: 
+	https://subtlepatterns.com/
+	
+*/
+
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+h1 {
+	font-family: Handycheera;
+    src: url(fonts/Handycheera_by_Situjuh_Nazara.otf);
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	font-size: 40pt;
+}
+
+#headerCopycat {
+	font-family: Handycheera;
+    src: url(fonts/Handycheera_by_Situjuh_Nazara.otf);
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	font-size: 40pt;
+	display: inline;
+	line-height: 50%;
+}
+
+p {
+	font-family: Fabrica;
+	src: url(fonts/Fabrica.otf);
+	font-size: 14pt;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+section a img {
+	width: 50px;
+	height: 50px;
+}
+
+#captions {
+	font-size: 8pt;
+	height: 5px;
+}
+
+.tableOverride {
+	border-width: 0px;
+	border-style: none;
+	background-color: rgba(0,0,0,0);
+}
+
+ul.img-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	margin: 0 1px 1px 0;
+	position: relative;
+	height: 200px;
+	width: 200px;
+}
+
+ul.img-list li:hover span.text-content {
+	opacity: 1;
+}
+
+span.text-content {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	cursor: pointer;
+	display: table; 
+	height: 200px;
+	width: 200px;
+	left: 0;
+	top: 0;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+span.text-content span {
+	display: table-cell;
+	padding: 3px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: Handycheera;
+    src: url(fonts/Handycheera_by_Situjuh_Nazara.otf);
+	font-size: 20pt;
+}
+
+table tr td {
+	background: rgba(255,255,255,0.7);
+	padding: 10px;
+	border-style: dotted;
+	border-width: 2px;
+	text-align: center;
+}
+
+table {
+	width: 60%;
+}
+
+body {
+	background-image: url("images/tree_bark.png");
+	background-repeat: repeat;
+}
+
+h1 {
+	text-align: center;
+}
